@@ -1,18 +1,18 @@
 # RaspicoW
 Send data from one Raspberry Pico to another by use of REYAX RYLR998 UARTs. 
-There are two boards. One sender board and one receier board. Each board has two modules on it: One Raspberry Pico and one REYAX RYLR998 UART.
-On both board the two modules are connected in exactly the same way (pls. refer to the "Drawing.JPG" file). 
-The only difference is in the software. The sender will run stand-alone, while the receiver is waiting to receive some data and will then display them on the screen. 
+There are two boards. One sender board and one receiver board. Each board has two modules placed on it: One Raspberry Pico and one REYAX RYLR998 UART.
+These two modules are connected in exactly the same way on both boards (pls. refer to the "Drawing.JPG" file). 
+The only difference is in the software. The sender will run stand-alone, while the receiver is waiting to receive and display the data, once they come in. 
 
-On the receiver board the following files should be placed in the main directory: 
-UART_check.py
-INIT_Receiver.py 
-RUN_Receiver.py
+On the receiver board the following files should be loaded in the main directory: 
+UART_check.py      - This is  to check the UART interface and the  communication between the two modules once they are connected.  
+INIT_Receiver.py   - This will initiate the Pico UART and the RYLR998 module after power up.  
+RUN_Receiver.py    - THis will run the receiver board in an endless loop. It will wait for data to come  in and display them on  the computer screen. 
 
 On the sender board the following files should be placed in the main directory: 
-UART_check.py
-Z_Numbers.txt
-RUN_Sender.py - This one should be renamed to main.py once all initial tests are successfully completed. Then it can rund as a stand-alone device. 
+UART_check.py      - This is  to check the UART interface and the  communication between the two modules once they are connected. 
+RUN_Sender.py      - This one should be renamed to main.py once all initial tests are successfully completed. Then it can rund as a stand-alone device. 
+Z_Numbers.txt      - This is the text file, which contains the data, that will be read line per line  and sent over the channel. 
 
 In this exercise we will experience how data can be transported from one Raspberry Pico to another Raspberry Pico. Data will be sent across 
 via two REYAX RYLR998 UART modules, by use of the LoraWAN protocol. One board is configured as the "sender" and the other as the "receiver". 
