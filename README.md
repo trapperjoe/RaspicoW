@@ -7,7 +7,7 @@ The only difference is in the software. The sender will run stand-alone, while t
 On the receiver board the following files should be loaded in the main directory: 
 UART_check.py      - This is to check the UART interface and the communication between the two modules on the same board, once they are connected.  
 INIT_Receiver.py   - This will initiate the Pico UART and the RYLR998 module after power up.  
-RUN_Receiver.py    - THis will run the receiver board in an endless loop. It will wait for data to come  in and display them on  the computer screen. 
+RUN_Receiver.py    - This will run the receiver board in an endless loop. It will wait for data to come  in and display them on  the computer screen. 
 
 On the sender board the following files should be placed in the main directory: 
 UART_check.py      - This is  to check the UART interface and the  communication between the two modules once they are connected. 
