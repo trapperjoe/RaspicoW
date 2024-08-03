@@ -43,10 +43,10 @@ Here are the recommended steps to follow:
 14. Have fun!!
 15. Good luck.
 
-One last hint: The programming of the internal LED is differnet for a Pico and a Pico W. 
+One last hint: The programming of the internal LED is different for a Pico and a Pico W. 
 For the Pico the initializaton is:    led_onboard = Pin(25, Pin.OUT)
 For the Pico W  the initializaton is: led_onboard = Pin("LED", Pin.OUT)
-Therfore a small adjustment in the code might be necessary if you run a normal Raspberry Pico device and not a Raspberry Pico W.
+Therefore a small adjustment in the code might be necessary if you run a normal Raspberry Pico device and not a Raspberry Pico W.
 
 
 
